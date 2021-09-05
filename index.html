@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="img/produk1.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>March Signature</title>
+
+  <!--Bootstrap style-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--script bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+<!--my style-->
+  <style>
+    body { 
+          background-color: #ffffff;
+    }
+    .logonavbar {
+      width:100px;
+    }
+
+
+    #hero {width: 100%;
+      padding-top: 70px;}
+
+    main {
+        width: 100%;
+        margin-top: 50px;
+        background-color: white;
+        position: relative;
+
+    }
+    #tentang {
+      border-top: 2px solid #e6e6e6;
+    }
+
+    #tentangKami {
+      
+      font-size: 20px;
+    }
+    #penutup {
+      margin-top: 1rem;
+      color: black;
+      
+    }
+    #navbar {
+      z-index: 999;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+	<!--Navigation Bar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
+  <div class="container-fluid">
+    <img class="logonavbar"src="img/logo2.png" alt="logo">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tentang">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#produkAwal">Gallery Produk</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pemesanan
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://shopee.co.id/march.signature" target="_blank">Shopee</a></li>
+            <li><a class="dropdown-item" href="https://api.whatsapp.com/send/?phone=6289602327540&text&app_absent=0" target="_blank">Pesan Via Whastapp</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#penutup">Hubungi Kami</a>
+        </li>
+        <li class="nav-item">
+          <div class="row">
+            <div class="col">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+<!---Jumbotron--->
+    <section class="jumbotron text-center">
+       <img src="img/hero.png" alt="hero" id="hero">
+    </section>
+<!---akhir jumbotron-->
+<main>
+
+
+
+<!--Katalog Produk Awal--->
+<section id="produkAwal" class="pb-4">
+<div class="container">
+  <div class="row mb-4 pt-4">
+    <div class="col text-center">
+      <h2>Gallery</h2>
+    </div>
+  </div>
+
+  <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+    <div class="col">
+    	<div class="card">
+	  		<img class="card-img-top" src="img/gallery/gallery1.jpeg" alt="kemejarayon">
+    			<div class="card-body">
+           <h2 class="text-center">Sage Green</h2>
+           <h4><s>Rp 129.000</s></h4>
+            <p>-Rp30.000</p>
+    			 <h3 class="card-text text-center">Rp 99.000</h3>
+    			</div>
+ 		  </div>
+    </div>
+    <div class="col">
+    	<div class="card">
+	  		<img class="card-img-top" src="img/gallery/gallery2.jpeg" alt="kemejarayon">
+    			<div class="card-body">
+          <br>
+    		  <h2 class="text-center">Dusty Rose</h2>
+          <br><br>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-outline-primary" href="#" role="button" data-bs-toggle="modal" data-bs-target="#deskripsiPink">Detail
+            </a>
+          </div>
+          
+    			</div>
+ 		 </div>
+    </div>
+    <div class="col">
+     	<div class="card">
+	  		<img class="card-img-top" src="img/gallery/gallery3.jpeg" alt="kemejarayon">
+    			<div class="card-body">
+    			<h2 class="text-center">Dusty Rose</h2>
+           <h4><s>Rp 129.000</s></h4>
+            <p>-Rp30.000</p>
+          <h3 class="card-text text-center">Rp 99.000</h3>
+
+    			</div>
+ 		 </div>
+    </div>
+    <div class="col">
+      <div class="card">
+	  		<img class="card-img-top" src="img/gallery/gallery4.jpeg" alt="kemejarayon">
+    			<div class="card-body">
+          <br>
+          <h2 class="text-center">Sage Green</h2>
+          <br><br>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-outline-primary" href="#" role="button" data-bs-toggle="modal" data-bs-target="#deskripsiPink">Detail
+            </a>
+          </div> 			
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+	  		<img class="card-img-top" src="img/gallery/gallery5.jpeg" alt="kemejarayon">
+    			<div class="card-body">
+    			<h2 class="text-center">Kemeja Rayon</h2>
+           <h4><s>Rp 129.000</s></h4>
+            <p>-Rp30.000</p>
+          <h3 class="card-text text-center">Rp 99.000</h3>  
+    			</div>
+ 		 </div>
+    </div>
+    <div class="col">
+      <div class="card">
+	  		<img class="card-img-top" src="img/gallery/gallery6.jpeg" alt="kemejarayon">
+    			<div class="card-body">
+    			<br>
+          <h2 class="text-center">Dusty Pink</h2>
+          <br><br>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-outline-primary" href="#" role="button" data-bs-toggle="modal" data-bs-target="#deskripsiPink">Detail
+            </a>
+          </div> 
+    			</div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img class="card-img-top" src="img/gallery/gallery7.jpeg" alt="kemejarayon">
+          <div class="card-body">
+            <h2 class="text-center">Kemeja Rayon</h2>
+            <h3 class="text-center">Dusty Pink</h3>
+            <h4><s>Rp 129.000</s></h4>
+            <p>-Rp30.000</p>
+            <h3 class="card-text text-center">Rp 99.000</h3>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a class="btn btn-outline-primary" href="https://shopee.co.id/march.signature" target="_blank" role="button">Beli</a>
+              <a href="#" data-name="Dusty&nbsp;Pink" data-price="99000" class="add-to-cart btn btn-primary">Add to cart</a> 
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img class="card-img-top" src="img/gallery/gallery8.jpeg" alt="kemejarayon">
+          <div class="card-body">
+            <h2 class="text-center">Kemeja Rayon</h2>
+            <h3 class="text-center">Dusty Pink</h3>
+            <h4><s>Rp 129.000</s></h4>
+            <p>-Rp30.000</p>
+            <h3 class="card-text text-center">Rp 99.000</h3>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a class="btn btn-outline-primary" href="https://shopee.co.id/march.signature" target="_blank" role="button">Beli</a>
+              <a href="#" data-name="Kemeja&nbsp;Rayon" data-price="99000" class="add-to-cart btn btn-primary">Add to cart</a> 
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img class="card-img-top" src="img/gallery/gallery9.jpeg" alt="kemejarayon">
+          <div class="card-body">
+          <h2 class="text-center">Kemeja Rayon</h2>
+          <h3 class="text-center">Sage Green</h3>
+            <h4><s>Rp 129.000</s></h4>
+            <p>-Rp30.000</p>
+            <h3 class="card-text text-center">Rp 99.000</h3>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a class="btn btn-outline-primary" href="https://shopee.co.id/march.signature" target="_blank" role="button">Beli</a>
+              <a href="#" data-name="Sage&nbsp;Green" data-price="99000" class="add-to-cart btn btn-primary">Add to cart</a>
+            </div>
+
+          </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+</section>
+<!-- Modal Detail Produk -->
+<div class="modal fade" id="deskripsiPink" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Deskripsi Produk</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Kemeja Rayon Wanita</h5>
+        <p align="justify">Produk baru dari #MarchSignature
+            Tekstur bahan rayon halus , adem & jatuh dipakai , jadi nyaman banget untuk aktivitas seharian.
+            <br>
+            <br>Detil Ukuran :
+            <ul>
+            <li>Lingkar Dada 110cm</li>
+            <li>Panjang Baju Depan 65cm</li>
+            <li>Panjang Baju Belakang 70cm</li>
+            <li>Panjang Tangan 55cm</li>
+            <li>Lingkar Ketiak 45cm</li>
+            </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Modal Cart -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: Rp<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="#" class="btn btn-primary" role="button" data-bs-toggle="modal" data-bs-target="#checkout">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Checkout -->
+<div class="modal fade" id="checkout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Checkout Pesanan</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Silakan Melakukan Transfer Pembayaran</h5>
+        <p align="justify">Pelanggan yang terhormat dimohon untuk melakukan transfer pembayaran pesanan anda sesuai yang tertera pada Cart Belanja. 
+          <br>
+        Rekening Bank ABC A.n March Signature Nomor rekening 00123456789</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="formulirpesan.html" class="btn btn-success">Konfirmasi Transfer</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--katalog produk-->
+<section id="katalogProduk" class="pb-4">
+
+  <div class="container">
+    <div class="row mb-4 pt-4">
+      <div class="col text-center">
+      <h2>Katalog Products</h2>
+      </div>
+    </div>
+    <table class="table">
+  <tbody>
+  <tr>
+    <td><img src="img/gallery/gallery1.jpeg" alt="katalog" style="width: 200px;"></td>
+    <td>
+      <h5>Kemeja Rayon Sage Green</h5>
+      <br>
+      <p><s>Rp129.000</s><br>
+      Rp 99.000</p>
+      <br>
+      <a class="btn btn-outline-primary" href="https://shopee.co.id/march.signature" target="_blank" role="button">Beli</a>
+      <a href="#" data-name="Sage&nbsp;Green" data-price="99000" class="add-to-cart btn btn-primary">Add to cart</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td><img src="img/gallery/gallery10.jpeg" alt="katalog" style="width: 200px;"></td>
+    <td>
+      <h5>Kemeja Rayon Dusty Pink</h5>
+      <br>
+      <p><s>Rp129.000</s><br>
+      Rp 99.000</p>
+      <br>
+      <a class="btn btn-outline-primary" href="https://shopee.co.id/march.signature" target="_blank" role="button">Beli</a>
+      <a href="#" data-name="Dusty&nbsp;Pink" data-price="99000" class="add-to-cart btn btn-primary">Add to cart</a>
+    </td>
+  </tr>
+      
+  </table>
+  </div>
+</section>
+
+  <!--Tentang--->
+  <section  id="tentang" >
+    <div class="container">
+      <div class="row mb-3">
+       <div class="col-md text-center">
+         <h2><br>Tentang Kami</h2><br>
+       </div>
+       
+          <div class="row justify-content-center" id="tentangKami">
+            <p align="center">
+            	Kebutuhan akan fashion seiring waktu terus meningkat karena fashion adalah kebutuhan. Kami hadir untuk memenuhi kebutuhan fashion anda untuk berbagai kondisi. Model fashion yang trendy, bahan yang adem membuat nyaman untuk dikenakan. Konsep Daily Outfit adalah konsep yang kami kembangkan, konsep tersebut bertujuan agar March Signature dapat menjadi pilihan anda dalam memenuhi kebutuhan fashion. 
+            </p>
+          </div>
+    </div>
+  </section>
+
+</main>
+
+<!--Penutup-->
+<section id="penutup" class="bg-light mt-5 pt-3">
+<div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-3 text-center">
+          <h4>March Signature</h4>
+          <br>
+           <h5>"Your Daily Outfit" <br> Menyediakan kebutuhan fashion terbaik untuk anda</h5>
+        </div>
+        <div class="col-md-4 text-justify">
+          <h4>Hubungi Kami</h4>
+          <br>
+          <p>
+            <img src="img/lokasi.png" alt="lokasi" style="width: 20px;"> Bogor, West Java, Indonesia
+            <br><img src="img/phone.png" alt="phone" style="width: 20px;"> +6289602327540
+            <br><img src="img/mail.png" alt="mail" style="width: 20px;"> hijupsby.inge@gmail.com
+            <br><img src="img/ig.png" alt="instagram" style="width: 20px;"> march.signature
+          </p>
+        </div>
+      <div class="col-md-3 text-justify">
+        <h5>Pemesanan</h5>
+        <h6>
+        <img src="img/shopee.png" alt="shopee" style="width: 50px;"> Shopee
+        </h6>
+
+        <h5>Metode Pengiriman</h5>
+        <p>
+          <img src="img/jt.jpg" alt="j&t" style="width: 50px;"> 
+          <img src="img/jne.png" alt="jne" style="width: 50px;">
+        </p>
+
+      </div>
+  </div>
+</div>
+</section>
+
+<footer class="bg-dark text-white">
+  <div class="container">
+    <div class="row text-center pt-3">
+      <div class="col">
+        <p>&copy; 2021 March Signature. All Rights Reserved. </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="asset/script.js"></script>
+</body>
+</html>
